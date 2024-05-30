@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  background: rgb(204, 32, 32);
+  background: linear-gradient(
+    150deg,
+    rgba(204, 32, 32, 1) 0%,
+    rgba(9, 9, 121, 1) 100%
+  );
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.bookmarks {
+  margin: 20px;
+}
+
+.bookmarks img {
+  user-select: none;
+  width: 60px;
+  height: auto;
+  margin: 10px;
+}
+
+.tar_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img:hover {
+  transform: scale(1.3);
+  transition: 0.2s;
+  filter: drop-shadow(3px 3px 5px rgb(0, 0, 0));
+}
+
+.Social,
+.Others,
+.essentials,
+.Education {
+  position: relative;
+  margin: 10px;
+  background-color: white;
+  width: fit-content;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+#WhatsApp{
+  width: 70px;
+  border-radius: 10px;
+}
+#chatGPT, #Great_learning, #Courera  {
+  width: 60px;
+  border-radius: 10px;
+}
+#snapchat,
+#music,
+#roadsh {
+  width: 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#datetime {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  color: white;
+}
+
+.weather {
+  position: absolute;
+  width: 300px;
+  margin: 10px;
+  top: 10px;
+  right: 10px;
+}
+
+.time {
+  background-color: transparent;
+  right: 0;
+  bottom: 0;
+}
+
+#social_count {
+  height: 55px;
+  width: auto;
+  border-radius: 10px;
+}
+
+h1 {
+  position: absolute;
+  left: 38%;
+  top: 40%;
+  font-size: 60px;
+  color: white;
+  text-decoration: dashed;
+  user-select: none;
+}
+
+#Jatin:hover {
+  user-select: none;
+  color: black;
+  text-decoration: dashed;
+  transition: ease-in 0.5s;
+}
+.weather:hover {
+  transition: 0.2s;
+  width: 500px;
+  filter: drop-shadow(3px 3px 5px rgb(176, 166, 166));
+}
+
+h2 {
+  user-select: none;
+}
+
