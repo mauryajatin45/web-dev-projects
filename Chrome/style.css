@@ -113,8 +113,8 @@ h1 {
 #Jatin:hover {
   user-select: none;
   color: black;
-  text-decoration: dashed;
   transition: ease-in 0.5s;
+  transition-timing-function: ease-in-out 0.5s;
 }
 .weather:hover {
   transition: 0.2s;

@@ -1,8 +1,3 @@
-//Time embed code
-var now = new Date();
-var datetime = now.toLocaleString();
-document.getElementById("datetime").innerHTML = datetime;
-
 
 //Weather Embed code
 (function(d, s, id) {
@@ -16,6 +11,20 @@ document.getElementById("datetime").innerHTML = datetime;
     const js = d.createElement(s);
     js.id = id;
     js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
+    
     fjs.parentNode.insertBefore(js, fjs);
 })(document, 'script', 'tomorrow-sdk');
+//Time embed code
+
+setInterval(() => {
+   
+    var now = new Date();
+    var datetime = now.toLocaleString();
+    document.getElementById("datetime").innerHTML = datetime;   
+    
+    currentIndex++;
+    
+    if (currentIndex === 1)
+     currentIndex = 0;
+ 
+ }, 1000)
